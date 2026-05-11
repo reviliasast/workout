@@ -189,8 +189,8 @@ export default function WorkoutMenu() {
         padding: "28px 24px 20px",
         textAlign: "center",
       }}>
-        <div style={{ fontSize: 11, letterSpacing: "4px", color: "#7EB8D4", marginBottom: 6, fontFamily: "monospace" }}>WORKOUT PROGRAM v2</div>
-        <h1 style={{ margin: 0, fontSize: 26, fontWeight: "normal", letterSpacing: "1px" }}>Rencana Latihan Mingguan</h1>
+        <div style={{ fontSize: 12, letterSpacing: "1px", color: "#7EB8D4", marginBottom: 6, fontFamily: "monospace" }}>REV'S WORKOUT PROGRAM</div>
+        <h1 style={{ margin: 0, fontSize: 26, color: "#e7f1f6",fontWeight: "normal", letterSpacing: "1px" }}>Weekly Workout Plan</h1>
         <p style={{ margin: "8px 0 0", fontSize: 13, color: "#A0B8C8" }}>
           154 cm · 68 kg · Scoliosis 54° · Fat Loss Focus
         </p>
@@ -256,12 +256,12 @@ export default function WorkoutMenu() {
             background: "#fff", borderRadius: 16, padding: 32,
             textAlign: "center", border: "1px solid #E8E8E8",
           }}>
-            <div style={{ fontSize: 64, marginBottom: 16 }}>🌿</div>
+            <div style={{ fontSize: 64, marginBottom: 32 }}>🌿</div>
             <h2 style={{ fontWeight: "normal", color: "#2C5F8A", margin: "0 0 12px" }}>Hari Istirahat</h2>
             <p style={{ color: "#666", lineHeight: 1.7, maxWidth: 300, margin: "0 auto", fontSize: 14 }}>
               Tubuh bertumbuh dan lemak terbakar saat istirahat. Prioritaskan tidur 7–8 jam dan protein yang cukup.
             </p>
-            <div style={{ marginTop: 20, background: "#EAF2FF", borderRadius: 12, padding: "14px 18px", display: "inline-block", textAlign: "left" }}>
+            <div style={{ marginTop: 16, background: "#EAF2FF", borderRadius: 12, padding: "14px 18px", display: "inline-block", textAlign: "left" }}>
               <div style={{ fontSize: 12, color: "#5B86C4", fontWeight: "bold", marginBottom: 8 }}>Boleh dilakukan:</div>
               {["Jalan santai 15–20 menit", "Stretching ringan", "Persiapkan meal plan minggu depan"].map(a => (
                 <div key={a} style={{ fontSize: 13, color: "#444", padding: "3px 0" }}>✓ {a}</div>
@@ -288,9 +288,9 @@ export default function WorkoutMenu() {
             </div>
 
             <div style={{ background: "#fff", borderRadius: 12, padding: "14px 16px", marginBottom: 10, border: `1px solid #1E844922`, borderLeft: "3px solid #1E8449" }}>
-              <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 4 }}>Tennis Match / Practice Rally</div>
-              <div style={{ fontSize: 12, color: "#666", marginBottom: 8 }}>60–90 menit permainan penuh atau rally latihan</div>
-              <div style={{ background: "#FAFAFA", borderRadius: 8, padding: "6px 10px", fontSize: 11, color: "#888", borderLeft: "2px solid #DDD" }}>
+              <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 4, textAlign: "left" }}>Tennis Match / Practice Rally</div>
+              <div style={{ fontSize: 12, color: "#666", marginBottom: 8, textAlign: "left" }}>60–90 menit permainan penuh atau rally latihan</div>
+              <div style={{ background: "#FAFAFA", borderRadius: 8, padding: "6px 10px", fontSize: 11, color: "#888", textAlign: "left", borderLeft: "2px solid #DDD" }}>
                 ⚠️ Pemanasan thoracic spine penting sebelum bermain — scoliosis dapat memengaruhi rotasi tubuh
               </div>
             </div>
@@ -381,8 +381,8 @@ export default function WorkoutMenu() {
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 3 }}>{ex.name}</div>
-                      <div style={{ fontSize: 12, color: "#666" }}>{ex.reps}</div>
+                      <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 3, textAlign: "left" }}>{ex.name}</div>
+                      <div style={{ fontSize: 12, color: "#666", textAlign: "left" }}>{ex.reps}</div>
                     </div>
                     <div style={{
                       background: selected.color, color: selected.accent,
@@ -393,7 +393,7 @@ export default function WorkoutMenu() {
                   {ex.note && (
                     <div style={{
                       marginTop: 8, background: "#FAFAFA", borderRadius: 8,
-                      padding: "6px 10px", fontSize: 11, color: "#888", borderLeft: "2px solid #DDD",
+                      padding: "6px 10px", fontSize: 11, color: "#888", textAlign: "left", borderLeft: "2px solid #DDD",
                     }}>
                       ⚠️ {ex.note}
                     </div>
@@ -423,7 +423,7 @@ export default function WorkoutMenu() {
             }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                 <div>
-                  <div style={{ fontSize: 10, color: selected.accent, letterSpacing: "3px", fontFamily: "monospace", marginBottom: 4 }}>{selected.label}</div>
+                  <div style={{ fontSize: 10, color: selected.accent, letterSpacing: "3px", fontFamily: "monospace", marginBottom: 4, textAlign: "left" }}>{selected.label}</div>
                   <h2 style={{ margin: 0, fontSize: 18, fontWeight: "normal" }}>{selected.theme}</h2>
                 </div>
                 <div style={{ textAlign: "right" }}>
@@ -456,8 +456,8 @@ export default function WorkoutMenu() {
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 3 }}>{ex.name}</div>
-                      <div style={{ fontSize: 12, color: "#666" }}>{ex.reps}</div>
+                      <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 3, textAlign: "left" }}>{ex.name}</div>
+                      <div style={{ fontSize: 12, color: "#666", textAlign: "left" }}>{ex.reps}</div>
                     </div>
                     <div style={{
                       background: selected.color, color: selected.accent,
@@ -468,7 +468,7 @@ export default function WorkoutMenu() {
                   {ex.note && (
                     <div style={{
                       marginTop: 8, background: "#FAFAFA", borderRadius: 8,
-                      padding: "6px 10px", fontSize: 11, color: "#888", borderLeft: "2px solid #DDD",
+                      padding: "6px 10px", fontSize: 11, color: "#888", textAlign: "left", borderLeft: "2px solid #DDD",
                     }}>
                       ⚠️ {ex.note}
                     </div>
