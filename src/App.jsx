@@ -208,6 +208,7 @@ export default function WorkoutMenu() {
       <div style={{
         display: "flex", overflowX: "auto", padding: "16px 16px 0",
         gap: 8, background: "#fff", borderBottom: "1px solid #E8E8E8",
+        justifyContent: "center",
       }}>
         {days.map((d, i) => (
           <button key={i} onClick={() => { setActiveDay(i); setTab("workout"); setShowShort(true); }} style={{
