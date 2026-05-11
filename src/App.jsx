@@ -502,15 +502,15 @@ export default function WorkoutMenu() {
                 <div style={{ display: "flex", gap: 12 }}>
                   <div style={{ fontSize: 22, flexShrink: 0 }}>{tip.icon}</div>
                   <div>
-                    <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 4 }}>{tip.title}</div>
-                    <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6 }}>{tip.body}</div>
+                    <div style={{ fontWeight: "bold", fontSize: 14, marginBottom: 4, textAlign: "left" }}>{tip.title}</div>
+                    <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6, textAlign: "left" }}>{tip.body}</div>
                   </div>
                 </div>
               </div>
             ))}
             <div style={{ background: "#FFF3CD", borderRadius: 12, padding: 16, border: "1px solid #F6D860", marginTop: 8 }}>
               <div style={{ fontWeight: "bold", fontSize: 13, marginBottom: 6 }}>⚕️ Scoliosis Reminder</div>
-              <div style={{ fontSize: 12, color: "#555", lineHeight: 1.7 }}>
+              <div style={{ fontSize: 12, color: "#555", lineHeight: 1.7, textAlign: "left" }}>
                 Dengan scoliosis 54°, sangat dianjurkan konsultasi ke fisioterapis sebelum mulai. Program ini dirancang untuk meminimalkan risiko, tapi setiap kondisi tulang berbeda. Hentikan latihan jika ada rasa sakit asimetris.
               </div>
             </div>
