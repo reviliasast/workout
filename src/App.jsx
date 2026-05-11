@@ -233,7 +233,7 @@ export default function WorkoutMenu() {
 
       {/* Tab Switcher */}
       {!selected.isRest && !selected.isTennis && (
-        <div style={{ display: "flex", padding: "12px 16px 0", gap: 8, background: "#fff" }}>
+        <div style={{ display: "flex", padding: "12px 16px 0", gap: 8, background: "#fff", justifyContent: "center" }}>
           {["workout", "tips"].map(t => (
             <button key={t} onClick={() => setTab(t)} style={{
               padding: "6px 18px", borderRadius: 20, border: "none",
